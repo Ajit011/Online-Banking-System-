@@ -14,13 +14,13 @@ public class Signup extends JFrame implements ActionListener {
     JRadioButton r1,r2,m1,m2,m3;
     JButton next;
 
-    JTextField textName ,textFname, textEmail,textAdd,textcity,textState,textPin;
+    JTextField  textName ,textFname, textEmail,textAdd,textcity,textState,textPin;
     JDateChooser dateChooser;
     Random ran = new Random();
     long first4 =(ran.nextLong() % 9000L) +1000L;
     String first = " " + Math.abs(first4);
     Signup(){
-        super ("APPLICATION FORM");
+      super ("APPLICATION FORM");
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Online/icon/bank.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
@@ -30,9 +30,9 @@ public class Signup extends JFrame implements ActionListener {
         add(image);
 
         JLabel label1 = new JLabel("APPLICATION FORM NO."+ first);
-        label1.setBounds(160,20,600,40);
-        label1.setFont(new Font("Raleway",Font.BOLD,38));
-        add(label1);
+      label1.setBounds(160,20,600,40);
+       label1.setFont(new Font("Raleway",Font.BOLD,38));
+       add(label1);
 
         JLabel label2 = new JLabel("Page 1");
         label2.setFont(new Font("Ralway",Font.BOLD, 22));
